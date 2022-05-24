@@ -94,10 +94,19 @@ population = n
 
     จัดทำโดยนักศึกษาสถาบันการจัดการปัญญาภิวัฒน์ (PIM) ชั้นปีที่ 3
     นายศิวกฤษฏิ์ กล้วยไม้เจริญ 6252500020
+    https://www.facebook.com/profile.php?id=100010958970680
+    
     นายภูริต เหล่ารุ่งเกียรติ 6252500127
+    https://www.facebook.com/purit.luarungkiat
+    
     นายพงษ์ปรีชา รัตนสร้อย 6252500283
+    https://www.facebook.com/ktiger555/
+    
     นายชินดนัย โสรบุตร 6252500526
+    https://www.facebook.com/profile.php?id=100002221170767
+    
     นายจิรสิน เทศรุ่งเรือง 6252500569
+    https://www.facebook.com/nstang.jinnapot
 
 | สร้างไฟล์ README  | https://dillinger.io/ |
 ### สามารถติดตามผลงานได้...https://github.com/tooe81948
