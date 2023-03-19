@@ -62,7 +62,7 @@ The algorithm for improving sunflowers' efficiency is as follows:
 	Display the best result.
 
 
-# ภาษาไทย
+# Thai
 
 SFO คือ Algorithm ที่เลียนแบบพฤติกรรมของดอกทานตะวัน โดยดอกทานตะวันจะหันหน้าเข้าหาแสงอาทิตย์เสมอ และจะกลับไป set home เมื่อดอกทานตะวันหาดวงอาทิตย์ไม่เจอ รายละเอียดดังนี้
 
