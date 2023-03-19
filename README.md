@@ -1,4 +1,69 @@
 # Sunflower Optimization Algorithm (SFO)
+
+# English
+
+SFO (Sunflower Optimization) is an algorithm that mimics the behavior of sunflowers. Sunflowers always face the sun, and if they can't find it, they go back to their original position. The details are as follows:
+
+=========Biological and Natural Behavior=========
+Sunflowers move towards the strongest source of light. This can be calculated using the following mathematical formula:
+
+	I = P/(4pid^2)
+	
+where I is the intensity of sunlight, P is the power of the sun, and d is the distance between the sun and the sunflower.
+
+=========Adjusting the Orientation of Sunflowers=========
+Each sunflower adjusts its orientation towards the sun as shown in the following equation:
+
+	S(i) = X* - Xi / ||X* - Xi||
+	
+where X* is the global best solution, Xi is the current solution, and n is the population size.
+
+=========Facing the Sun=========
+Each sunflower faces the sun according to the following equation:
+
+	di = Y(angle) * Pi( ||Xi + Xi-1|| * ||Xi + Xi-1|| )
+	
+where Y(angle) is the angle of the sunflower, and Pi( ||Xi + Xi-1||) is the probability of pollination between the nearest sunflowers. This generates a new sunflower based on the distance between the two sunflowers.
+
+=========Limiting the Sunflower's Range=========
+Each sunflower's position is limited to the following formula:
+
+	d(max) = || X(max) - X(min) || / 2 * n
+	
+where X(max) and X(min) are the maximum and minimum limits, and n is the population size.
+
+=========Updating the Sunflower's Position=========
+Each sunflower changes position to create a new sunflower in the following equation:
+
+	X(i+1) = X(i) + d(i) * s(i)
+	
+where Xi+1 is the position of the new sunflower (individual).
+
+=========Algorithm Guidelines=========
+The algorithm for improving sunflowers' efficiency is as follows:
+
+	Set the initial parameters for the death rate (m), population size (n), pollination rate (P), and maximum iteration (mazitr), e.g., m = 1, n = 50, P = 20, mazitr = 80.
+	Set t = 0.
+	Create a population of sunflowers X(i) E (L,U] randomly, where i = 1,2,3,...,n, similar to the genetic population, or we can set population = n.
+	Evaluate the fitness function of each sunflower in the population X.
+	Select the best sunflower from the overall population X.
+	Adjust all sunflowers' position towards the sun as shown in equation 5.
+	While True:
+		Calculate the movement direction of the fitness function as a vector for all individuals.
+		Remove the worst m% of sunflowers.
+		Calculate the process of individuals moving towards the sun as shown in equation 6.
+		Fertilize the best sunflowers in this round of sun.
+		Check the maximum value, as shown in item 7.
+		Update the data as shown in item 8.
+		Evaluate new individuals.
+		Accept new individuals if their fitness value is better than the current value.
+		Set t = t+1.
+	If t > mazitr, exit the loop.
+	Display the best result.
+
+
+# ภาษาไทย
+
 SFO คือ Algorithm ที่เลียนแบบพฤติกรรมของดอกทานตะวัน โดยดอกทานตะวันจะหันหน้าเข้าหาแสงอาทิตย์เสมอ และจะกลับไป set home เมื่อดอกทานตะวันหาดวงอาทิตย์ไม่เจอ รายละเอียดดังนี้
 
 =========พฤติกรรมทางชีวภาพและธรรมชาติ=========
