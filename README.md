@@ -2,48 +2,52 @@
 
 # English
 
-SFO (Sunflower Optimization) is a fascinating nature-inspired optimization algorithm that draws its inspiration from the unique behavior of sunflowers. Just as sunflowers always turn their faces towards the sun, seeking to maximize their exposure to life-giving sunlight, the SFO algorithm seeks to optimize solutions by constantly orienting itself towards the most promising regions of the search space.
-In the vast field of optimization problems, the SFO algorithm stands tall, its petals radiating with the warmth of efficient problem-solving. Each sunflower in the algorithm represents a potential solution, and as the algorithm progresses, these sunflowers dance in a mesmerizing pattern, their movements guided by the intensity of the sun's rays - the fitness function.
-The beauty of the SFO algorithm lies in its ability to balance exploration and exploitation, just as a sunflower strikes a delicate equilibrium between soaking up the sun's energy and conserving its own resources. By intelligently navigating the search space, the algorithm ensures that no stone is left unturned in the quest for the optimal solution.
-As the algorithm unfolds, the sunflowers converge towards the global optimum, their petals intertwining in a stunning display of collaboration and synergy. The final result is a solution that stands out like a vibrant sunflower in a field of ordinary optimization techniques - a testament to the power and elegance of nature-inspired computing.
-In the grand tapestry of optimization algorithms, the Sunflower Optimization algorithm blooms with the promise of efficient, effective, and inspiring problem-solving. It reminds us that sometimes, the key to unlocking the most complex challenges lies in the simple, yet profound, wisdom of nature itself.
+SFO (Sunflower Optimization) is a fascinating nature-inspired optimization algorithm that draws its inspiration from the unique behavior of sunflowers. Just as sunflowers always turn their faces towards the sun, seeking to maximize their exposure to life-giving sunlight, the SFO algorithm seeks to optimize solutions by constantly orienting itself towards the most promising regions of the search space. <br>
 
-=========Biological and Natural Behavior=========
+In the vast field of optimization problems, the SFO algorithm stands tall, its petals radiating with the warmth of efficient problem-solving. Each sunflower in the algorithm represents a potential solution, and as the algorithm progresses, these sunflowers dance in a mesmerizing pattern, their movements guided by the intensity of the sun's rays - the fitness function. <br>
+
+The beauty of the SFO algorithm lies in its ability to balance exploration and exploitation, just as a sunflower strikes a delicate equilibrium between soaking up the sun's energy and conserving its own resources. By intelligently navigating the search space, the algorithm ensures that no stone is left unturned in the quest for the optimal solution. <br>
+
+As the algorithm unfolds, the sunflowers converge towards the global optimum, their petals intertwining in a stunning display of collaboration and synergy. The final result is a solution that stands out like a vibrant sunflower in a field of ordinary optimization techniques - a testament to the power and elegance of nature-inspired computing. <br>
+
+In the grand tapestry of optimization algorithms, the Sunflower Optimization algorithm blooms with the promise of efficient, effective, and inspiring problem-solving. It reminds us that sometimes, the key to unlocking the most complex challenges lies in the simple, yet profound, wisdom of nature itself. <br>
+
+=========Biological and Natural Behavior========= <br>
 Sunflowers move towards the strongest source of light. This can be calculated using the following mathematical formula:
 
 	I = P/(4pid^2)
 	
 where I is the intensity of sunlight, P is the power of the sun, and d is the distance between the sun and the sunflower.
 
-=========Adjusting the Orientation of Sunflowers=========
+=========Adjusting the Orientation of Sunflowers========= <br>
 Each sunflower adjusts its orientation towards the sun as shown in the following equation:
 
 	S(i) = X* - Xi / ||X* - Xi||
 	
 where X* is the global best solution, Xi is the current solution, and n is the population size.
 
-=========Facing the Sun=========
+=========Facing the Sun========= <br>
 Each sunflower faces the sun according to the following equation:
 
 	di = Y(angle) * Pi( ||Xi + Xi-1|| * ||Xi + Xi-1|| )
 	
 where Y(angle) is the angle of the sunflower, and Pi( ||Xi + Xi-1||) is the probability of pollination between the nearest sunflowers. This generates a new sunflower based on the distance between the two sunflowers.
 
-=========Limiting the Sunflower's Range=========
+=========Limiting the Sunflower's Range========= <br>
 Each sunflower's position is limited to the following formula:
 
 	d(max) = || X(max) - X(min) || / 2 * n
 	
 where X(max) and X(min) are the maximum and minimum limits, and n is the population size.
 
-=========Updating the Sunflower's Position=========
+=========Updating the Sunflower's Position========= <br>
 Each sunflower changes position to create a new sunflower in the following equation:
 
 	X(i+1) = X(i) + d(i) * s(i)
 	
 where Xi+1 is the position of the new sunflower (individual).
 
-=========Algorithm Guidelines=========
+=========Algorithm Guidelines========= <br>
 The algorithm for improving sunflowers' efficiency is as follows:
 
 	Set the initial parameters for the death rate (m), population size (n), pollination rate (P), and maximum iteration (mazitr), e.g., m = 1, n = 50, P = 20, mazitr = 80.
@@ -68,9 +72,18 @@ The algorithm for improving sunflowers' efficiency is as follows:
 
 # Thai
 
-SFO คือ Algorithm ที่เลียนแบบพฤติกรรมของดอกทานตะวัน โดยดอกทานตะวันจะหันหน้าเข้าหาแสงอาทิตย์เสมอ และจะกลับไป set home เมื่อดอกทานตะวันหาดวงอาทิตย์ไม่เจอ รายละเอียดดังนี้
+SFO (Sunflower Optimization) เป็นอัลกอริทึมที่ได้รับแรงบันดาลใจจากธรรมชาติอันน่าหลงใหล โดยอิงจากพฤติกรรมเฉพาะของดอกทานตะวัน เช่นเดียวกับที่ดอกทานตะวันหันหน้าเข้าหาดวงอาทิตย์เสมอ เพื่อให้ได้รับแสงแดดที่ให้ชีวิตมากที่สุด อัลกอริทึม SFO ก็พยายามหาทางเลือกที่ดีที่สุดโดยปรับทิศทางตัวเองไปสู่บริเวณที่มีแนวโน้มที่ดีที่สุดของพื้นที่ค้นหาอยู่เสมอ
 
-=========พฤติกรรมทางชีวภาพและธรรมชาติ=========
+ในโลกแห่งปัญหาการหาค่าที่เหมาะสมอันกว้างใหญ่ อัลกอริทึม SFO ตั้งตระหง่าน กลีบดอกของมันแผ่รังสีความอบอุ่นของการแก้ปัญหาอย่างมีประสิทธิภาพ ดอกทานตะวันแต่ละดอกในอัลกอริทึมแทนทางแก้ปัญหาที่อาจเป็นไปได้ และเมื่ออัลกอริทึมดำเนินการต่อไป ดอกทานตะวันเหล่านี้จะร่ายรำอย่างตระการตา โดยมีการเคลื่อนไหวตามความเข้มของแสงอาทิตย์ - ฟังก์ชันวัดประสิทธิภาพ
+
+ความงดงามของอัลกอริทึม SFO อยู่ที่ความสามารถในการสร้างสมดุลระหว่างการสำรวจและการใช้ประโยชน์ เช่นเดียวกับที่ดอกทานตะวันมีความสมดุลอันละเอียดอ่อนระหว่างการดูดซับพลังงานจากดวงอาทิตย์และการอนุรักษ์ทรัพยากรของตัวเอง ด้วยการนำทางพื้นที่ค้นหาอย่างชาญฉลาด อัลกอริทึมจะทำให้แน่ใจว่าไม่มีหินก้อนใดถูกมองข้ามไปในการค้นหาทางออกที่ดีที่สุด
+
+ขณะที่อัลกอริทึมคลี่คลาย ดอกทานตะวันจะมุ่งไปสู่ค่าที่เหมาะสมที่สุดในระดับโลก กลีบดอกของพวกมันจะประสานกันอย่างน่าทึ่งในการแสดงถึงการร่วมมือและการประสานพลัง ผลลัพธ์สุดท้ายคือทางออกที่โดดเด่นราวกับดอกทานตะวันสีสันสดใสในทุ่งเทคนิคการหาค่าที่เหมาะสมธรรมดา ๆ ซึ่งเป็นเครื่องพิสูจน์ถึงพลังและความงดงามของการคำนวณที่ได้รับแรงบันดาลใจจากธรรมชาติ
+
+ในผืนผ้าใหญ่ของอัลกอริทึมการหาค่าที่เหมาะสม อัลกอริทึม Sunflower Optimization ผลิบานด้วยคำมั่นสัญญาของการแก้ปัญหาที่มีประสิทธิภาพ ได้ผล และสร้างแรงบันดาลใจ มันเตือนเราว่าบางครั้ง กุญแจสำคัญในการไขปัญหาที่ซับซ้อนที่สุดนั้นอยู่ในภูมิปัญญาอันเรียบง่ายแต่ลึกซึ้งของธรรมชาติเอง
+
+
+=========พฤติกรรมทางชีวภาพและธรรมชาติ========= <br>
 จะเคลื่อนที่เข้าหาแสงที่มีความเข็มแสงมากที่สุดโดยเราสามารถคำนวณได้โดย ใช้สูตรทางคณิตศาสตร์ ดังนี้
 
 	I = P/(4*pi*d^2)
@@ -80,7 +93,7 @@ I คือความเข้มของการแผ่รังสีด
 P คือพลังของดวงอาทิตย์ 
 d คือระยะห่างระหว่างดวงอาทิตย์กับดอกทานตะวันแต่ละดวง
 
-=========การปรับทิศทางดอกทานตะวัน=========
+=========การปรับทิศทางดอกทานตะวัน========= <br>
 ดอกทานตะวันแต่ละดอกจะปรับทิศทางของมันไปที่ ดวงอาทิตย์ดังแสดงในสมการต่อไปนี้
 
     S(i) = X* - Xi / ||X* - Xi||      i = 1,2,.....,n
@@ -108,7 +121,7 @@ n คือ จำนวนประชากรของดอกทานต�
 
 
 
-=========อัพเดทตำแหน่งดอกทานตะวัน=========
+=========อัพเดทตำแหน่งดอกทานตะวัน========= <br>
 ดอกทานตะวันแต่ละชนิด มีการเปลี่ยนตำแหน่งเพื่อผลิตดอกทานตะวันรุ่นใหม่ตามทิศทาง ( ขึ้นตก Sun )
 และขั้นตอนของดอกทานตะวันที่มุ่งสู่ดวงอาทิตย์ ( การหันหน้าเข้าหาดวงอาทิตย์ )ดังนี้
 โดยใช้สูตร
